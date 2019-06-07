@@ -1,0 +1,10 @@
+<div class="container">
+  <h3>Product list</h3><br>
+  <div class="col-md-9 col-sm-12" *ngIf="proImgs">
+    <div *ngFor="let imgs of proImgs ">
+    <div class="banner_img col-md-4">
+      <img alt="image" style="width: 90%;" class="background-image" [src]="imgs.img" />
+    </div>
+  </div>
+  </div>
+</div>

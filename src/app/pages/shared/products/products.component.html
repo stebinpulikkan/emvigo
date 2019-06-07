@@ -2,9 +2,14 @@
   <h3>Product list</h3><br>
   <div class="col-md-9 col-sm-12" *ngIf="proImgs">
     <div *ngFor="let imgs of proImgs ">
-    <div class="banner_img col-md-4">
-      <img alt="image" style="width: 90%;" class="background-image" [src]="imgs.img" />
+      <div class=" col-md-4">
+        <div class="banner_img">
+           <img alt="image" style="width: 90%;" class="background-image" [src]="imgs.img" />
+          </div>
+          <span ><b>{{imgs.name}}</b></span>
+       </div>
     </div>
   </div>
-  </div>
 </div>
+<br>
+<br>

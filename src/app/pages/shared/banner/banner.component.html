@@ -1,6 +1,25 @@
-<div class="container">
+<!-- <div class="container">
     <div class="col-md-9 col-sm-12" *ngIf="banerImgs">
       <div class="banner_img"><img alt="image" class="background-image" [src]="banerImgs[0].img" /></div>
      </div>
+</div> -->
+<div class="container">
+  <div class="slider-container" *ngIf="banerImgs">
+    <img src="https://www.vizzed.com/smd/photo_album_pics/fullsize/255385-1353158877.jpg" alt="" width="3000"
+      height="200" id="bac">
+
+    <div class="img-container" id="myDIV">
+      <ng-container *ngFor="let banerImg of banerImgs ">
+        <img src="{{banerImg.img}}" alt="" width="1000" height="200">
+      </ng-container>
+
+      <!-- <img src="https://consulting.kantar.com/wp-content/uploads/2018/05/growth-strategy_header-2000x400.jpg" alt="" width="1000" height="200"> -->
+      <!-- <img src="https://images.reverb.com/image/upload/s--_ig3OdUR--/a_exif,c_fill,fl_progressive,g_north,h_400,q_auto:eco,w_2000/v1495810578/ildhocab0igw4ygpg7zp.jpg" alt="" width="1000" height="200"> -->
+    </div>
+    <i class="fas  fa-4x" id="bu1" (click)="leftClick()" style="font-size: 45px;">
+      < </i> 
+      <i class="fas  fa-4x" id="bu2" (click)="rightClick()" style="font-size: 45px;">>
+    </i>
+  </div>
 </div>
 <!-- <h5>test banner</h5> -->

@@ -4,7 +4,9 @@ import { of } from 'rxjs';
 @Injectable()
 export class productService {
     banner =[ 
-        { img: "https://cdn.pixabay.com/photo/2015/12/15/09/04/banner-1093909__340.jpg" },
+        { img: "https://consulting.kantar.com/wp-content/uploads/2019/03/Superwomen-center-banner.jpg" },
+        { img: "https://consulting.kantar.com/wp-content/uploads/2018/05/growth-strategy_header-2000x400.jpg" },
+        { img: "https://images.reverb.com/image/upload/s--_ig3OdUR--/a_exif,c_fill,fl_progressive,g_north,h_400,q_auto:eco,w_2000/v1495810578/ildhocab0igw4ygpg7zp.jpg" }
          ]
     products =[ 
         { img: "https://colorway.foundry.com/site/assets/files/1031/slide1-img.png" ,name:"FZ125"},
